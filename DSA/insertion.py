@@ -1,3 +1,8 @@
+"""
+
+"""
+
+
 def insertion_sort(array: list) -> list:
     for index in range(1, len(array)):
         temp_value = array[index]
@@ -12,6 +17,3 @@ def insertion_sort(array: list) -> list:
         array[position + 1] = temp_value
 
     return array
-
-
-print(insertion_sort([9, 8, 7, 6, 5, 4, 3, 2, 1]))
