@@ -5,7 +5,7 @@ log N), and one that is O(N).
 """
 
 
-def search_with_nth_step(array: list):
+def search_with_nth_step(array: list) -> int:
     greatest = 0
 
     for i in array:
@@ -13,3 +13,13 @@ def search_with_nth_step(array: list):
             greatest = i
 
     return greatest
+
+
+def search_with_nlogn_step(array: list) -> int:
+    """
+    Since will know that the largest will be at the back
+    when sorted.
+    :param array:
+    :return:
+    """
+    return sorted(array)[-1]

@@ -10,6 +10,7 @@ class QuickSort:
     """
     QuickSort Class
     """
+
     def __init__(self, array: list) -> None:
         self.array = array
 
